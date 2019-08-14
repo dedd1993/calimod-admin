@@ -19,6 +19,10 @@ export const DashboardRoutes: Routes = [
                 component: HomeComponent
             },
             {
+                path: 'user',
+                loadChildren: () => import('./user/user.module').then(m => m.UserModule),
+            },
+            {
                 path: 'customer',
                 loadChildren: () => import('./customer/customer.module').then(m => m.CustomerModule),
             },
@@ -31,8 +35,8 @@ export const DashboardRoutes: Routes = [
 ];
 
 @NgModule({
-    imports: [ RouterModule.forChild(DashboardRoutes) ],
-    exports: [ RouterModule ]
+    imports: [RouterModule.forChild(DashboardRoutes)],
+    exports: [RouterModule]
 })
 
-export class DashboarRoutingModule {}
+export class DashboarRoutingModule { }

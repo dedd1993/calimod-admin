@@ -3,7 +3,8 @@
         <mat-toolbar class="sidenav-header">
             <mat-toolbar-row>
                 <div class="logo">
-                    <img class="logo-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+                    <img class="logo-icon"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
                     <span class="logo-text secondary-text">NgxAdmin</span>
                 </div>
             </mat-toolbar-row>
@@ -13,19 +14,20 @@
                 <dt routerLink="/dashboard/home" routerLinkActive="active">Home</dt>
             </dl>
             <dl>
+                <dt routerLink="/dashboard/user" routerLinkActive="active">User</dt>
+            </dl>
+            <dl>
                 <dt routerLink="/dashboard/customer" routerLinkActive="active">Customer</dt>
             </dl>
             <dl class="submenu">
                 <dt>Product</dt>
                 <dd>
-                    <a routerLink="/dashboard/product"
-                       routerLinkActive="active"
-                       [routerLinkActiveOptions]="{exact: true}">
-                       List
+                    <a routerLink="/dashboard/product" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}">
+                        List
                     </a>
-                    <a routerLink="/dashboard/product/detail"
-                       routerLinkActive="active">
-                       Detalle
+                    <a routerLink="/dashboard/product/detail" routerLinkActive="active">
+                        Detalle
                     </a>
                 </dd>
             </dl>
@@ -40,7 +42,8 @@
                 </button>
 
                 <button mat-raised-button class="warn-A400" style="margin-left: 8px;">
-                    <mat-icon style="font-size: 18px; height: 18px; width: 24px; color: rgba(0,0,0,.54);">dashboard</mat-icon>
+                    <mat-icon style="font-size: 18px; height: 18px; width: 24px; color: rgba(0,0,0,.54);">dashboard
+                    </mat-icon>
                     Material Theme (Angular 8)
                 </button>
 
@@ -48,7 +51,8 @@
 
                 <div class="user-menu">
                     <button mat-button [matMenuTriggerFor]="menu">
-                        <img src="http://fuse-angular-material.withinpixels.com/assets/images/avatars/profile.jpg" alt="User Image"> Administrator
+                        <img src="http://fuse-angular-material.withinpixels.com/assets/images/avatars/profile.jpg"
+                            alt="User Image"> Administrator
                         <mat-icon>keyboard_arrow_down</mat-icon>
                     </button>
 
@@ -70,16 +74,19 @@
                 </div>
 
                 <button mat-button [matMenuTriggerFor]="menuLanguage" class="settings">
-                    <img src="http://fuse-angular-material.withinpixels.com/assets/images/flags/us.png" style="margin-right: 8px;">
+                    <img src="http://fuse-angular-material.withinpixels.com/assets/images/flags/us.png"
+                        style="margin-right: 8px;">
                     <span>EN</span>
                 </button>
                 <mat-menu #menuLanguage="matMenu" [overlapTrigger]="false" xPosition="before" yPosition="above">
                     <button mat-menu-item>
-                        <img src="http://fuse-angular-material.withinpixels.com/assets/images/flags/us.png" style="margin-right: 8px;">
+                        <img src="http://fuse-angular-material.withinpixels.com/assets/images/flags/us.png"
+                            style="margin-right: 8px;">
                         <span>EN</span>
                     </button>
                     <button mat-menu-item>
-                        <img src="http://fuse-angular-material.withinpixels.com/assets/images/flags/es.png" style="margin-right: 8px;">
+                        <img src="http://fuse-angular-material.withinpixels.com/assets/images/flags/es.png"
+                            style="margin-right: 8px;">
                         <span>ES</span>
                     </button>
                 </mat-menu>
@@ -96,7 +103,7 @@
 
         <div class="content">
             <div class="content__body">
-            <!-- <div class="content__body" style="padding: 16px;"> -->
+                <!-- <div class="content__body" style="padding: 16px;"> -->
                 <router-outlet></router-outlet>
             </div>
 
